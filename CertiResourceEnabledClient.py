@@ -102,7 +102,7 @@ class SpotifyAPI(object):
         return r.json()
 
 
-    def getAlbumresource(self, lookupId, resourceType='albums', version='v1',market="US" ):
+    def getAlbumresource(self, lookupId, resourceType='albums', version='v1',market= "market=US" ):
         endpoint =f"https://api.spotify.com/{version}/{resourceType}/{lookupId}?{market}"
         headers = self.get_resource_header()
         r = requests.get(endpoint, headers=headers)

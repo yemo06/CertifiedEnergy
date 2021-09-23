@@ -11,12 +11,25 @@ artist= spotify.get_artist(artistUricode)
 albumUri = artist['items']
 albumUriList =crec.getUriListDictfromList2("uri", albumUri)#.split(":",2)[2] #Returns a list
 
-print(albumUriList) #So it looks were dealing with duplicates at the track level so why not compare duplicte albums b explicit if not pop, else, keep the first
-print(len(albumUriList))
+# print(albumUriList) #So it looks were dealing with duplicates at the track level so why not compare duplicte albums b explicit if not pop, else, keep the first
+# print(len(albumUriList))
+
+#GeExplcit Albums only
+singleAlbum = spotify.get_album(albumUriList[9])
+albumName= singleAlbum['name']
+albumTracklen= singleAlbum['total_tracks']
+newList=singleAlbum['tracks']['items']
+explicitCount =crec.getGenAttrDictfromList('explicit',newList).count(True)
+trackListtest = []
+trackListtest.insert(0,[albumName,albumTracklen,explicitCount,albumUriList[9]])
+
+print(trackListtest)
 
 #getting the tracks from drakes albums
 # trackUrilist =[]
 # for i in range(len(albumUriList)):
+
+
 #     tracks= spotify.get_album(albumUriList[i])
 #     trackUri =tracks['tracks']['items']
 #     # print(tracks)
