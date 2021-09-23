@@ -14,16 +14,50 @@ albumUriList =crec.getUriListDictfromList2("uri", albumUri)#.split(":",2)[2] #Re
 # print(albumUriList) #So it looks were dealing with duplicates at the track level so why not compare duplicte albums b explicit if not pop, else, keep the first
 # print(len(albumUriList))
 
-#GeExplcit Albums only
-singleAlbum = spotify.get_album(albumUriList[9])
-albumName= singleAlbum['name']
-albumTracklen= singleAlbum['total_tracks']
-newList=singleAlbum['tracks']['items']
-explicitCount =crec.getGenAttrDictfromList('explicit',newList).count(True)
-trackListtest = []
-trackListtest.insert(0,[albumName,albumTracklen,explicitCount,albumUriList[9]])
+#GetExplcit Albums only
+albumInfolist = []
+for album in range(len(albumUriList)):
+    singleAlbum = spotify.get_album(albumUriList[album])
+    albumName= singleAlbum['name']
+    albumTracklen= singleAlbum['total_tracks']
+    newList=singleAlbum['tracks']['items']
+    explicitCount =crec.getGenAttrDictfromList('explicit',newList).count(True)
+    albumInfolist.append([albumName,albumTracklen,explicitCount,albumUriList[album]])
 
-print(trackListtest)
+
+# explcitAlbumlist = []
+# index= 0
+# # for index in range(len(albumInfolist)-1):
+# while(index< len(albumInfolist)-1):
+#     while (albumInfolist[index][0] == albumInfolist[index+1][0]):
+#         if(albumInfolist[index][1] == albumInfolist[index+1][1] and albumInfolist[index][2] == albumInfolist[index+1][2]):
+#             explcitAlbumlist.append(albumInfolist[index])
+#             index+=1
+#             break
+#         else:
+#             if(albumInfolist[index][2] > albumInfolist[index+1][2]):
+#                 explcitAlbumlist.append(albumInfolist[index])
+#                 index+=1
+#                 break
+#             elif(albumInfolist[index][1] > albumInfolist[index+1][1]):
+#                 explcitAlbumlist.append(albumInfolist[index])
+#                 index+=1
+#                 break
+#             else:
+#                 explcitAlbumlist.append(albumInfolist[index+1])
+                
+#     index+=1
+    
+#     print(explcitAlbumlist)
+
+
+    
+            
+
+
+
+# print(explcitAlbumlist)# Puts all the general info needed to make a formula to get rid of Non-Explicit alnums Next is the generalzation and the f
+# print(len(explcitAlbumlist))
 
 #getting the tracks from drakes albums
 # trackUrilist =[]

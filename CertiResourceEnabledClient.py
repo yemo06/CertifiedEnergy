@@ -94,7 +94,6 @@ class SpotifyAPI(object):
         #print(r.json())
         with open('data.json', 'w', encoding='utf-8') as f:
             json.dump(r.json(), f, ensure_ascii=False, indent=4)
-        print(endpoint)
 
         if r.status_code not in range(200, 299):
             r.status_code
