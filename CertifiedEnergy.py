@@ -36,10 +36,16 @@ for album in range(len(albumInfolist)):
     if albumInfolist[album][2] > 0:
         explicitList.append(albumInfolist[album])
         # album+=1
-    print(len(explicitList))
+    # print((explicitList))
 
-print(explicitList)
-print(len(explicitList))
+### Algorithm to get the uri of tracks
+Tracklistcodes = []
+for x in range(len(explicitList)):
+    for y in range(explicitList[x][1]):
+        traclisturi = singleAlbum = spotify.get_album(explicitList[x][3])
+        ### Algorithm to get 
+
+
 
 
 
