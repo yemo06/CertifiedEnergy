@@ -1,4 +1,9 @@
 import CertiResourceEnabledClient as crec
+from collections import Counter
+
+def Extract(lst,ndx):
+    return [item[ndx] for item in lst]
+
 
 #getting artist (Drake) uri code 
 spotify = crec.SpotifyAPI(crec.client_id,crec.client_secret)
@@ -25,31 +30,51 @@ for album in range(len(albumUriList)):
     albumInfolist.append([albumName,albumTracklen,explicitCount,albumUriList[album]])
 
 
-# explcitAlbumlist = []
-# index= 0
-# # for index in range(len(albumInfolist)-1):
-# while(index< len(albumInfolist)-1):
-#     while (albumInfolist[index][0] == albumInfolist[index+1][0]):
-#         if(albumInfolist[index][1] == albumInfolist[index+1][1] and albumInfolist[index][2] == albumInfolist[index+1][2]):
-#             explcitAlbumlist.append(albumInfolist[index])
-#             index+=1
-#             break
-#         else:
-#             if(albumInfolist[index][2] > albumInfolist[index+1][2]):
-#                 explcitAlbumlist.append(albumInfolist[index])
-#                 index+=1
-#                 break
-#             elif(albumInfolist[index][1] > albumInfolist[index+1][1]):
-#                 explcitAlbumlist.append(albumInfolist[index])
-#                 index+=1
-#                 break
-#             else:
-#                 explcitAlbumlist.append(albumInfolist[index+1])
-                
-#     index+=1
-    
-#     print(explcitAlbumlist)
+### Here is where the algotithem for filtering Non-Explicit albums should go ###
+explicitList = []
+for album in range(len(albumInfolist)):
+    if albumInfolist[album][2] > 0:
+        explicitList.append(albumInfolist[album])
+        # album+=1
+    print(len(explicitList))
 
+print(explicitList)
+print(len(explicitList))
+
+
+
+
+# uniqueAlbumcount = (Counter(alb[0] for alb in albumInfolist))
+# count= Extract(albumInfolist,0)
+# # for 
+# print (count)
+
+# explcitAlbumlist = [] # Prints every single album, have to rework jdx, specifically to only get the name count.
+# idx= 0
+# # # # # # for idxin range(len(albumInfolist)-1):
+# # # # while(idx< len(albumInfolist)-1):
+# # # #     while (albumInfolist[idx][0] == albumInfolist[idx+1][0]):
+# for idx in range(len(albumInfolist)-1):
+#     if(albumInfolist[idx][0] == albumInfolist[idx+1][0]):
+#         for jdx in range(sum(x.count(albumInfolist[idx][0]) for x in albumInfolist)):
+        
+#             if(albumInfolist[idx][1] == albumInfolist[idx+jdx+1][1] and albumInfolist[idx][2] == albumInfolist[idx+jdx+1][2]):
+#                 explcitAlbumlist.append(albumInfolist[idx])
+#             else:
+#                 if(albumInfolist[idx][2] > albumInfolist[idx+jdx+1][2]):
+#                     explcitAlbumlist.append(albumInfolist[idx])
+
+#                 elif(albumInfolist[idx][1] > albumInfolist[idx+jdx+1][1]):
+#                     explcitAlbumlist.append(albumInfolist[idx])
+                    
+#                 else:
+#                     explcitAlbumlist.append(albumInfolist[idx+jdx+1])
+                
+               
+# # print(albumInfolist[0].count(albumInfolist[0][0]))
+# # print(sum(x.count(albumInfolist[19][0]) for x in albumInfolist))
+# print(explcitAlbumlist)
+# print(len(explcitAlbumlist))
 
     
             
