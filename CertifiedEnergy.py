@@ -41,8 +41,12 @@ for album in range(len(albumInfolist)):
 ### Algorithm to get the uri of tracks
 Tracklistcodes = []
 for x in range(len(explicitList)):
-    for y in range(explicitList[x][1]):
-        traclisturi = singleAlbum = spotify.get_album(explicitList[x][3])
+    # for y in range(explicitList[x][1]):
+        trackListuri = spotify.get_album(explicitList[x][3])['tracks']['items']
+        tracks = crec.getUriListDictfromList2('uri',trackListuri)
+    
+print(tracks)
+
         ### Algorithm to get 
 
 
