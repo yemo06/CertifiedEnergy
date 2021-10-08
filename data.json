@@ -14,48 +14,48 @@
     ],
     "copyrights": [
         {
-            "text": "© 2019 Young Money/Cash Money Records",
+            "text": "© 2021 OVO, under exclusive license to Republic Records, a division of UMG Recordings, Inc.",
             "type": "C"
         },
         {
-            "text": "℗ 2019 Young Money/Cash Money Records",
+            "text": "℗ 2021 OVO, under exclusive license to Republic Records, a division of UMG Recordings, Inc.",
             "type": "P"
         }
     ],
     "external_ids": {
-        "upc": "00602577520716"
+        "upc": "00602438865918"
     },
     "external_urls": {
-        "spotify": "https://open.spotify.com/album/1LShhEEKRT5MNPcO7jtYHh"
+        "spotify": "https://open.spotify.com/album/3SpBlxme9WbeQdI9kx7KAV"
     },
     "genres": [],
-    "href": "https://api.spotify.com/v1/albums/1LShhEEKRT5MNPcO7jtYHh",
-    "id": "1LShhEEKRT5MNPcO7jtYHh",
+    "href": "https://api.spotify.com/v1/albums/3SpBlxme9WbeQdI9kx7KAV",
+    "id": "3SpBlxme9WbeQdI9kx7KAV",
     "images": [
         {
             "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b27354ef13c30a024a7f1ba79efd",
+            "url": "https://i.scdn.co/image/ab67616d0000b273cd945b4e3de57edd28481a3f",
             "width": 640
         },
         {
             "height": 300,
-            "url": "https://i.scdn.co/image/ab67616d00001e0254ef13c30a024a7f1ba79efd",
+            "url": "https://i.scdn.co/image/ab67616d00001e02cd945b4e3de57edd28481a3f",
             "width": 300
         },
         {
             "height": 64,
-            "url": "https://i.scdn.co/image/ab67616d0000485154ef13c30a024a7f1ba79efd",
+            "url": "https://i.scdn.co/image/ab67616d00004851cd945b4e3de57edd28481a3f",
             "width": 64
         }
     ],
-    "label": "Young Money/Cash Money Records",
-    "name": "So Far Gone",
-    "popularity": 70,
-    "release_date": "2009",
-    "release_date_precision": "year",
-    "total_tracks": 18,
+    "label": "OVO",
+    "name": "Certified Lover Boy",
+    "popularity": 100,
+    "release_date": "2021-09-03",
+    "release_date_precision": "day",
+    "total_tracks": 21,
     "tracks": {
-        "href": "https://api.spotify.com/v1/albums/1LShhEEKRT5MNPcO7jtYHh/tracks?offset=0&limit=50&market=US",
+        "href": "https://api.spotify.com/v1/albums/3SpBlxme9WbeQdI9kx7KAV/tracks?offset=0&limit=50&market=US",
         "items": [
             {
                 "artists": [
@@ -71,20 +71,20 @@
                     }
                 ],
                 "disc_number": 1,
-                "duration_ms": 176179,
+                "duration_ms": 336511,
                 "explicit": true,
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/track/1v24T2ug4TlssYZvI3aL4O"
+                    "spotify": "https://open.spotify.com/track/2HSmyk2qMN8WQjuGhaQgCk"
                 },
-                "href": "https://api.spotify.com/v1/tracks/1v24T2ug4TlssYZvI3aL4O",
-                "id": "1v24T2ug4TlssYZvI3aL4O",
+                "href": "https://api.spotify.com/v1/tracks/2HSmyk2qMN8WQjuGhaQgCk",
+                "id": "2HSmyk2qMN8WQjuGhaQgCk",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Lust For Life",
+                "name": "Champagne Poetry",
                 "preview_url": null,
                 "track_number": 1,
                 "type": "track",
-                "uri": "spotify:track:1v24T2ug4TlssYZvI3aL4O"
+                "uri": "spotify:track:2HSmyk2qMN8WQjuGhaQgCk"
             },
             {
                 "artists": [
@@ -100,20 +100,20 @@
                     }
                 ],
                 "disc_number": 1,
-                "duration_ms": 290791,
+                "duration_ms": 178623,
                 "explicit": true,
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/track/3XLSlQLJf3Ut0zvMUxnF1h"
+                    "spotify": "https://open.spotify.com/track/6jy9yJfgCsMHdu2Oz4BGKX"
                 },
-                "href": "https://api.spotify.com/v1/tracks/3XLSlQLJf3Ut0zvMUxnF1h",
-                "id": "3XLSlQLJf3Ut0zvMUxnF1h",
+                "href": "https://api.spotify.com/v1/tracks/6jy9yJfgCsMHdu2Oz4BGKX",
+                "id": "6jy9yJfgCsMHdu2Oz4BGKX",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Houstatlantavegas",
+                "name": "Papi’s Home",
                 "preview_url": null,
                 "track_number": 2,
                 "type": "track",
-                "uri": "spotify:track:3XLSlQLJf3Ut0zvMUxnF1h"
+                "uri": "spotify:track:6jy9yJfgCsMHdu2Oz4BGKX"
             },
             {
                 "artists": [
@@ -129,40 +129,30 @@
                     },
                     {
                         "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/2iojnBLj0qIMiKPvVhLnsH"
+                            "spotify": "https://open.spotify.com/artist/5f7VJjfbwm532GiveGC0ZK"
                         },
-                        "href": "https://api.spotify.com/v1/artists/2iojnBLj0qIMiKPvVhLnsH",
-                        "id": "2iojnBLj0qIMiKPvVhLnsH",
-                        "name": "Trey Songz",
+                        "href": "https://api.spotify.com/v1/artists/5f7VJjfbwm532GiveGC0ZK",
+                        "id": "5f7VJjfbwm532GiveGC0ZK",
+                        "name": "Lil Baby",
                         "type": "artist",
-                        "uri": "spotify:artist:2iojnBLj0qIMiKPvVhLnsH"
-                    },
-                    {
-                        "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/55Aa2cqylxrFIXC767Z865"
-                        },
-                        "href": "https://api.spotify.com/v1/artists/55Aa2cqylxrFIXC767Z865",
-                        "id": "55Aa2cqylxrFIXC767Z865",
-                        "name": "Lil Wayne",
-                        "type": "artist",
-                        "uri": "spotify:artist:55Aa2cqylxrFIXC767Z865"
+                        "uri": "spotify:artist:5f7VJjfbwm532GiveGC0ZK"
                     }
                 ],
                 "disc_number": 1,
-                "duration_ms": 375050,
+                "duration_ms": 221979,
                 "explicit": true,
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/track/6NwhtCYkfwWlcR62Ac4E7y"
+                    "spotify": "https://open.spotify.com/track/37Nqx7iavZpotJSDXZWbJ3"
                 },
-                "href": "https://api.spotify.com/v1/tracks/6NwhtCYkfwWlcR62Ac4E7y",
-                "id": "6NwhtCYkfwWlcR62Ac4E7y",
+                "href": "https://api.spotify.com/v1/tracks/37Nqx7iavZpotJSDXZWbJ3",
+                "id": "37Nqx7iavZpotJSDXZWbJ3",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Successful (feat. Trey Songz & Lil Wayne)",
+                "name": "Girls Want Girls (with Lil Baby)",
                 "preview_url": null,
                 "track_number": 3,
                 "type": "track",
-                "uri": "spotify:track:6NwhtCYkfwWlcR62Ac4E7y"
+                "uri": "spotify:track:37Nqx7iavZpotJSDXZWbJ3"
             },
             {
                 "artists": [
@@ -178,30 +168,40 @@
                     },
                     {
                         "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/6u11Qbko2N2hP4lTBYjX86"
+                            "spotify": "https://open.spotify.com/artist/3hcs9uc56yIGFCSy9leWe7"
                         },
-                        "href": "https://api.spotify.com/v1/artists/6u11Qbko2N2hP4lTBYjX86",
-                        "id": "6u11Qbko2N2hP4lTBYjX86",
-                        "name": "Peter Bjorn and John",
+                        "href": "https://api.spotify.com/v1/artists/3hcs9uc56yIGFCSy9leWe7",
+                        "id": "3hcs9uc56yIGFCSy9leWe7",
+                        "name": "Lil Durk",
                         "type": "artist",
-                        "uri": "spotify:artist:6u11Qbko2N2hP4lTBYjX86"
+                        "uri": "spotify:artist:3hcs9uc56yIGFCSy9leWe7"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/4fxd5Ee7UefO4CUXgwJ7IP"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/4fxd5Ee7UefO4CUXgwJ7IP",
+                        "id": "4fxd5Ee7UefO4CUXgwJ7IP",
+                        "name": "Giveon",
+                        "type": "artist",
+                        "uri": "spotify:artist:4fxd5Ee7UefO4CUXgwJ7IP"
                     }
                 ],
                 "disc_number": 1,
-                "duration_ms": 234175,
+                "duration_ms": 296568,
                 "explicit": true,
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/track/4FDSPGncHRpr6yB8DD4CtI"
+                    "spotify": "https://open.spotify.com/track/61S79KIVA4I9FXbnsylEHT"
                 },
-                "href": "https://api.spotify.com/v1/tracks/4FDSPGncHRpr6yB8DD4CtI",
-                "id": "4FDSPGncHRpr6yB8DD4CtI",
+                "href": "https://api.spotify.com/v1/tracks/61S79KIVA4I9FXbnsylEHT",
+                "id": "61S79KIVA4I9FXbnsylEHT",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Let’s Call It Off (feat. Peter Bjorn and John)",
+                "name": "In The Bible (with Lil Durk & Giveon)",
                 "preview_url": null,
                 "track_number": 4,
                 "type": "track",
-                "uri": "spotify:track:4FDSPGncHRpr6yB8DD4CtI"
+                "uri": "spotify:track:61S79KIVA4I9FXbnsylEHT"
             },
             {
                 "artists": [
@@ -214,23 +214,33 @@
                         "name": "Drake",
                         "type": "artist",
                         "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3nFkdlSjzX9mRTtwJOzDYB"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3nFkdlSjzX9mRTtwJOzDYB",
+                        "id": "3nFkdlSjzX9mRTtwJOzDYB",
+                        "name": "JAY-Z",
+                        "type": "artist",
+                        "uri": "spotify:artist:3nFkdlSjzX9mRTtwJOzDYB"
                     }
                 ],
                 "disc_number": 1,
-                "duration_ms": 188189,
+                "duration_ms": 228461,
                 "explicit": true,
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/track/0JaVdpmiex2EP7bBzyKVTa"
+                    "spotify": "https://open.spotify.com/track/4VCbgIdr8ptegWeJpqLVHH"
                 },
-                "href": "https://api.spotify.com/v1/tracks/0JaVdpmiex2EP7bBzyKVTa",
-                "id": "0JaVdpmiex2EP7bBzyKVTa",
+                "href": "https://api.spotify.com/v1/tracks/4VCbgIdr8ptegWeJpqLVHH",
+                "id": "4VCbgIdr8ptegWeJpqLVHH",
                 "is_local": false,
                 "is_playable": true,
-                "name": "November 18th",
+                "name": "Love All (with JAY-Z)",
                 "preview_url": null,
                 "track_number": 5,
                 "type": "track",
-                "uri": "spotify:track:0JaVdpmiex2EP7bBzyKVTa"
+                "uri": "spotify:track:4VCbgIdr8ptegWeJpqLVHH"
             },
             {
                 "artists": [
@@ -246,30 +256,30 @@
                     },
                     {
                         "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/55Aa2cqylxrFIXC767Z865"
+                            "spotify": "https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY"
                         },
-                        "href": "https://api.spotify.com/v1/artists/55Aa2cqylxrFIXC767Z865",
-                        "id": "55Aa2cqylxrFIXC767Z865",
-                        "name": "Lil Wayne",
+                        "href": "https://api.spotify.com/v1/artists/0Y5tJX1MQlPlqiwlOH1tJY",
+                        "id": "0Y5tJX1MQlPlqiwlOH1tJY",
+                        "name": "Travis Scott",
                         "type": "artist",
-                        "uri": "spotify:artist:55Aa2cqylxrFIXC767Z865"
+                        "uri": "spotify:artist:0Y5tJX1MQlPlqiwlOH1tJY"
                     }
                 ],
                 "disc_number": 1,
-                "duration_ms": 302492,
+                "duration_ms": 291175,
                 "explicit": true,
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/track/2hcohLIysMxofYziluXCoX"
+                    "spotify": "https://open.spotify.com/track/40iJIUlhi6renaREYGeIDS"
                 },
-                "href": "https://api.spotify.com/v1/tracks/2hcohLIysMxofYziluXCoX",
-                "id": "2hcohLIysMxofYziluXCoX",
+                "href": "https://api.spotify.com/v1/tracks/40iJIUlhi6renaREYGeIDS",
+                "id": "40iJIUlhi6renaREYGeIDS",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Ignant Shit (feat. Lil Wayne)",
+                "name": "Fair Trade (with Travis Scott)",
                 "preview_url": null,
                 "track_number": 6,
                 "type": "track",
-                "uri": "spotify:track:2hcohLIysMxofYziluXCoX"
+                "uri": "spotify:track:40iJIUlhi6renaREYGeIDS"
             },
             {
                 "artists": [
@@ -285,30 +295,40 @@
                     },
                     {
                         "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/1Xfmvd48oOhEWkscWyEbh9"
+                            "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
                         },
-                        "href": "https://api.spotify.com/v1/artists/1Xfmvd48oOhEWkscWyEbh9",
-                        "id": "1Xfmvd48oOhEWkscWyEbh9",
-                        "name": "Lloyd",
+                        "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                        "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                        "name": "Future",
                         "type": "artist",
-                        "uri": "spotify:artist:1Xfmvd48oOhEWkscWyEbh9"
+                        "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/50co4Is1HCEo8bhOyUWKpn"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/50co4Is1HCEo8bhOyUWKpn",
+                        "id": "50co4Is1HCEo8bhOyUWKpn",
+                        "name": "Young Thug",
+                        "type": "artist",
+                        "uri": "spotify:artist:50co4Is1HCEo8bhOyUWKpn"
                     }
                 ],
                 "disc_number": 1,
-                "duration_ms": 193962,
+                "duration_ms": 257604,
                 "explicit": true,
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/track/3lkkkYc1wBj5l3FVlpqvP6"
+                    "spotify": "https://open.spotify.com/track/0k1WUmIRnG3xU6fvvDVfRG"
                 },
-                "href": "https://api.spotify.com/v1/tracks/3lkkkYc1wBj5l3FVlpqvP6",
-                "id": "3lkkkYc1wBj5l3FVlpqvP6",
+                "href": "https://api.spotify.com/v1/tracks/0k1WUmIRnG3xU6fvvDVfRG",
+                "id": "0k1WUmIRnG3xU6fvvDVfRG",
                 "is_local": false,
                 "is_playable": true,
-                "name": "A Night Off (feat. Lloyd)",
+                "name": "Way 2 Sexy (with Future & Young Thug)",
                 "preview_url": null,
                 "track_number": 7,
                 "type": "track",
-                "uri": "spotify:track:3lkkkYc1wBj5l3FVlpqvP6"
+                "uri": "spotify:track:0k1WUmIRnG3xU6fvvDVfRG"
             },
             {
                 "artists": [
@@ -324,20 +344,20 @@
                     }
                 ],
                 "disc_number": 1,
-                "duration_ms": 230717,
+                "duration_ms": 308755,
                 "explicit": true,
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/track/7mPoCVGP752A5DtHf1SKkM"
+                    "spotify": "https://open.spotify.com/track/4s7QLoImIwmPi9L6dq1nVW"
                 },
-                "href": "https://api.spotify.com/v1/tracks/7mPoCVGP752A5DtHf1SKkM",
-                "id": "7mPoCVGP752A5DtHf1SKkM",
+                "href": "https://api.spotify.com/v1/tracks/4s7QLoImIwmPi9L6dq1nVW",
+                "id": "4s7QLoImIwmPi9L6dq1nVW",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Say What's Real",
+                "name": "TSU",
                 "preview_url": null,
                 "track_number": 8,
                 "type": "track",
-                "uri": "spotify:track:7mPoCVGP752A5DtHf1SKkM"
+                "uri": "spotify:track:4s7QLoImIwmPi9L6dq1nVW"
             },
             {
                 "artists": [
@@ -353,30 +373,30 @@
                     },
                     {
                         "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/6oBm8HB0yfrIc9IHbxs6in"
+                            "spotify": "https://open.spotify.com/artist/1RyvyyTE3xzB2ZywiAwp0i"
                         },
-                        "href": "https://api.spotify.com/v1/artists/6oBm8HB0yfrIc9IHbxs6in",
-                        "id": "6oBm8HB0yfrIc9IHbxs6in",
-                        "name": "Lykke Li",
+                        "href": "https://api.spotify.com/v1/artists/1RyvyyTE3xzB2ZywiAwp0i",
+                        "id": "1RyvyyTE3xzB2ZywiAwp0i",
+                        "name": "Future",
                         "type": "artist",
-                        "uri": "spotify:artist:6oBm8HB0yfrIc9IHbxs6in"
+                        "uri": "spotify:artist:1RyvyyTE3xzB2ZywiAwp0i"
                     }
                 ],
                 "disc_number": 1,
-                "duration_ms": 230484,
+                "duration_ms": 273577,
                 "explicit": true,
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/track/524wvipGqxPKYWxkjf9y46"
+                    "spotify": "https://open.spotify.com/track/34D6FJysnQioVingDKufuf"
                 },
-                "href": "https://api.spotify.com/v1/tracks/524wvipGqxPKYWxkjf9y46",
-                "id": "524wvipGqxPKYWxkjf9y46",
+                "href": "https://api.spotify.com/v1/tracks/34D6FJysnQioVingDKufuf",
+                "id": "34D6FJysnQioVingDKufuf",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Little Bit (feat. Lykke Li)",
+                "name": "N 2 Deep",
                 "preview_url": null,
                 "track_number": 9,
                 "type": "track",
-                "uri": "spotify:track:524wvipGqxPKYWxkjf9y46"
+                "uri": "spotify:track:34D6FJysnQioVingDKufuf"
             },
             {
                 "artists": [
@@ -392,20 +412,20 @@
                     }
                 ],
                 "disc_number": 1,
-                "duration_ms": 257690,
+                "duration_ms": 205721,
                 "explicit": true,
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/track/3QLjDkgLh9AOEHlhQtDuhs"
+                    "spotify": "https://open.spotify.com/track/11pEKMLmavDu8fxOB5QjbQ"
                 },
-                "href": "https://api.spotify.com/v1/tracks/3QLjDkgLh9AOEHlhQtDuhs",
-                "id": "3QLjDkgLh9AOEHlhQtDuhs",
+                "href": "https://api.spotify.com/v1/tracks/11pEKMLmavDu8fxOB5QjbQ",
+                "id": "11pEKMLmavDu8fxOB5QjbQ",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Best I Ever Had",
+                "name": "Pipe Down",
                 "preview_url": null,
                 "track_number": 10,
                 "type": "track",
-                "uri": "spotify:track:3QLjDkgLh9AOEHlhQtDuhs"
+                "uri": "spotify:track:11pEKMLmavDu8fxOB5QjbQ"
             },
             {
                 "artists": [
@@ -421,40 +441,59 @@
                     },
                     {
                         "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/6Jrxnp0JgqmeUX1veU591p"
+                            "spotify": "https://open.spotify.com/artist/1ooV8YZC1KbpEcrmI8WH0F"
                         },
-                        "href": "https://api.spotify.com/v1/artists/6Jrxnp0JgqmeUX1veU591p",
-                        "id": "6Jrxnp0JgqmeUX1veU591p",
-                        "name": "Santigold",
+                        "href": "https://api.spotify.com/v1/artists/1ooV8YZC1KbpEcrmI8WH0F",
+                        "id": "1ooV8YZC1KbpEcrmI8WH0F",
+                        "name": "Yebba",
                         "type": "artist",
-                        "uri": "spotify:artist:6Jrxnp0JgqmeUX1veU591p"
-                    },
-                    {
-                        "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/55Aa2cqylxrFIXC767Z865"
-                        },
-                        "href": "https://api.spotify.com/v1/artists/55Aa2cqylxrFIXC767Z865",
-                        "id": "55Aa2cqylxrFIXC767Z865",
-                        "name": "Lil Wayne",
-                        "type": "artist",
-                        "uri": "spotify:artist:55Aa2cqylxrFIXC767Z865"
+                        "uri": "spotify:artist:1ooV8YZC1KbpEcrmI8WH0F"
                     }
                 ],
                 "disc_number": 1,
-                "duration_ms": 209957,
+                "duration_ms": 133762,
                 "explicit": true,
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/track/2TWSilrWcTrgVKcP8kfEfg"
+                    "spotify": "https://open.spotify.com/track/1PDP7mLiAMwhfmgIwzhOm2"
                 },
-                "href": "https://api.spotify.com/v1/tracks/2TWSilrWcTrgVKcP8kfEfg",
-                "id": "2TWSilrWcTrgVKcP8kfEfg",
+                "href": "https://api.spotify.com/v1/tracks/1PDP7mLiAMwhfmgIwzhOm2",
+                "id": "1PDP7mLiAMwhfmgIwzhOm2",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Unstoppable (feat. Santigold & Lil Wayne)",
+                "name": "Yebba’s Heartbreak",
                 "preview_url": null,
                 "track_number": 11,
                 "type": "track",
-                "uri": "spotify:track:2TWSilrWcTrgVKcP8kfEfg"
+                "uri": "spotify:track:1PDP7mLiAMwhfmgIwzhOm2"
+            },
+            {
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                        "id": "3TVXtAsR1Inumwj472S9r4",
+                        "name": "Drake",
+                        "type": "artist",
+                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 204346,
+                "explicit": true,
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/2tUL6dZf1mywCj5WvCPZw6"
+                },
+                "href": "https://api.spotify.com/v1/tracks/2tUL6dZf1mywCj5WvCPZw6",
+                "id": "2tUL6dZf1mywCj5WvCPZw6",
+                "is_local": false,
+                "is_playable": true,
+                "name": "No Friends In The Industry",
+                "preview_url": null,
+                "track_number": 12,
+                "type": "track",
+                "uri": "spotify:track:2tUL6dZf1mywCj5WvCPZw6"
             },
             {
                 "artists": [
@@ -470,13 +509,188 @@
                     },
                     {
                         "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/45a6gCQWq61lIUDmr1tKuO"
+                            "spotify": "https://open.spotify.com/artist/1URnnhqYAYcrqrcwql10ft"
                         },
-                        "href": "https://api.spotify.com/v1/artists/45a6gCQWq61lIUDmr1tKuO",
-                        "id": "45a6gCQWq61lIUDmr1tKuO",
-                        "name": "Bun B",
+                        "href": "https://api.spotify.com/v1/artists/1URnnhqYAYcrqrcwql10ft",
+                        "id": "1URnnhqYAYcrqrcwql10ft",
+                        "name": "21 Savage",
                         "type": "artist",
-                        "uri": "spotify:artist:45a6gCQWq61lIUDmr1tKuO"
+                        "uri": "spotify:artist:1URnnhqYAYcrqrcwql10ft"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/08Ld63UgKrJ0nZnCkzHtzc"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/08Ld63UgKrJ0nZnCkzHtzc",
+                        "id": "08Ld63UgKrJ0nZnCkzHtzc",
+                        "name": "Project Pat",
+                        "type": "artist",
+                        "uri": "spotify:artist:08Ld63UgKrJ0nZnCkzHtzc"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 242965,
+                "explicit": true,
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/2BcMwX1MPV6ZHP4tUT9uq6"
+                },
+                "href": "https://api.spotify.com/v1/tracks/2BcMwX1MPV6ZHP4tUT9uq6",
+                "id": "2BcMwX1MPV6ZHP4tUT9uq6",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Knife Talk (with 21 Savage ft. Project Pat)",
+                "preview_url": null,
+                "track_number": 13,
+                "type": "track",
+                "uri": "spotify:track:2BcMwX1MPV6ZHP4tUT9uq6"
+            },
+            {
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                        "id": "3TVXtAsR1Inumwj472S9r4",
+                        "name": "Drake",
+                        "type": "artist",
+                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 239635,
+                "explicit": true,
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/42m3eP1JJhtzffal9B136J"
+                },
+                "href": "https://api.spotify.com/v1/tracks/42m3eP1JJhtzffal9B136J",
+                "id": "42m3eP1JJhtzffal9B136J",
+                "is_local": false,
+                "is_playable": true,
+                "name": "7am On Bridle Path",
+                "preview_url": null,
+                "track_number": 14,
+                "type": "track",
+                "uri": "spotify:track:42m3eP1JJhtzffal9B136J"
+            },
+            {
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                        "id": "3TVXtAsR1Inumwj472S9r4",
+                        "name": "Drake",
+                        "type": "artist",
+                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 269883,
+                "explicit": true,
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/2Q3jFbyE61mCjS3SkW4toJ"
+                },
+                "href": "https://api.spotify.com/v1/tracks/2Q3jFbyE61mCjS3SkW4toJ",
+                "id": "2Q3jFbyE61mCjS3SkW4toJ",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Race My Mind",
+                "preview_url": null,
+                "track_number": 15,
+                "type": "track",
+                "uri": "spotify:track:2Q3jFbyE61mCjS3SkW4toJ"
+            },
+            {
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                        "id": "3TVXtAsR1Inumwj472S9r4",
+                        "name": "Drake",
+                        "type": "artist",
+                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/687cZJR45JO7jhk1LHIbgq"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/687cZJR45JO7jhk1LHIbgq",
+                        "id": "687cZJR45JO7jhk1LHIbgq",
+                        "name": "Tems",
+                        "type": "artist",
+                        "uri": "spotify:artist:687cZJR45JO7jhk1LHIbgq"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 192417,
+                "explicit": true,
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/08XWh5c0BMyD1nKVxxl91z"
+                },
+                "href": "https://api.spotify.com/v1/tracks/08XWh5c0BMyD1nKVxxl91z",
+                "id": "08XWh5c0BMyD1nKVxxl91z",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Fountains (with Tems)",
+                "preview_url": null,
+                "track_number": 16,
+                "type": "track",
+                "uri": "spotify:track:08XWh5c0BMyD1nKVxxl91z"
+            },
+            {
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                        "id": "3TVXtAsR1Inumwj472S9r4",
+                        "name": "Drake",
+                        "type": "artist",
+                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/7c0XG5cIJTrrAgEC3ULPiq"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/7c0XG5cIJTrrAgEC3ULPiq",
+                        "id": "7c0XG5cIJTrrAgEC3ULPiq",
+                        "name": "Ty Dolla $ign",
+                        "type": "artist",
+                        "uri": "spotify:artist:7c0XG5cIJTrrAgEC3ULPiq"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 229303,
+                "explicit": true,
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/5ScbulRnixQ2XAdvrPMFjz"
+                },
+                "href": "https://api.spotify.com/v1/tracks/5ScbulRnixQ2XAdvrPMFjz",
+                "id": "5ScbulRnixQ2XAdvrPMFjz",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Get Along Better",
+                "preview_url": null,
+                "track_number": 17,
+                "type": "track",
+                "uri": "spotify:track:5ScbulRnixQ2XAdvrPMFjz"
+            },
+            {
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                        "id": "3TVXtAsR1Inumwj472S9r4",
+                        "name": "Drake",
+                        "type": "artist",
+                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
                     },
                     {
                         "external_urls": {
@@ -487,225 +701,138 @@
                         "name": "Lil Wayne",
                         "type": "artist",
                         "uri": "spotify:artist:55Aa2cqylxrFIXC767Z865"
-                    }
-                ],
-                "disc_number": 1,
-                "duration_ms": 382262,
-                "explicit": true,
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/track/0q7LGcVSpsIoSbjChtZ8lI"
-                },
-                "href": "https://api.spotify.com/v1/tracks/0q7LGcVSpsIoSbjChtZ8lI",
-                "id": "0q7LGcVSpsIoSbjChtZ8lI",
-                "is_local": false,
-                "is_playable": true,
-                "name": "Uptown (feat. Bun B & Lil Wayne)",
-                "preview_url": null,
-                "track_number": 12,
-                "type": "track",
-                "uri": "spotify:track:0q7LGcVSpsIoSbjChtZ8lI"
-            },
-            {
-                "artists": [
-                    {
-                        "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
-                        },
-                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
-                        "id": "3TVXtAsR1Inumwj472S9r4",
-                        "name": "Drake",
-                        "type": "artist",
-                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
-                    }
-                ],
-                "disc_number": 1,
-                "duration_ms": 262046,
-                "explicit": true,
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/track/43iKgGbmfqPLh3mxUlospI"
-                },
-                "href": "https://api.spotify.com/v1/tracks/43iKgGbmfqPLh3mxUlospI",
-                "id": "43iKgGbmfqPLh3mxUlospI",
-                "is_local": false,
-                "is_playable": true,
-                "name": "Sooner Than Later",
-                "preview_url": null,
-                "track_number": 13,
-                "type": "track",
-                "uri": "spotify:track:43iKgGbmfqPLh3mxUlospI"
-            },
-            {
-                "artists": [
-                    {
-                        "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
-                        },
-                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
-                        "id": "3TVXtAsR1Inumwj472S9r4",
-                        "name": "Drake",
-                        "type": "artist",
-                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
                     },
                     {
                         "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/0f5nVCcR06GX8Qikz0COtT"
+                            "spotify": "https://open.spotify.com/artist/1sBkRIssrMs1AbVkOJbc7a"
                         },
-                        "href": "https://api.spotify.com/v1/artists/0f5nVCcR06GX8Qikz0COtT",
-                        "id": "0f5nVCcR06GX8Qikz0COtT",
-                        "name": "Omarion",
+                        "href": "https://api.spotify.com/v1/artists/1sBkRIssrMs1AbVkOJbc7a",
+                        "id": "1sBkRIssrMs1AbVkOJbc7a",
+                        "name": "Rick Ross",
                         "type": "artist",
-                        "uri": "spotify:artist:0f5nVCcR06GX8Qikz0COtT"
+                        "uri": "spotify:artist:1sBkRIssrMs1AbVkOJbc7a"
                     }
                 ],
                 "disc_number": 1,
-                "duration_ms": 139574,
+                "duration_ms": 213103,
                 "explicit": true,
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/track/4i3GraNMzBKze1WsVl38DS"
+                    "spotify": "https://open.spotify.com/track/50ceCGZ3oD3U5caQV5bP6f"
                 },
-                "href": "https://api.spotify.com/v1/tracks/4i3GraNMzBKze1WsVl38DS",
-                "id": "4i3GraNMzBKze1WsVl38DS",
+                "href": "https://api.spotify.com/v1/tracks/50ceCGZ3oD3U5caQV5bP6f",
+                "id": "50ceCGZ3oD3U5caQV5bP6f",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Bria's Interlude (feat. Omarion)",
-                "preview_url": null,
-                "track_number": 14,
-                "type": "track",
-                "uri": "spotify:track:4i3GraNMzBKze1WsVl38DS"
-            },
-            {
-                "artists": [
-                    {
-                        "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
-                        },
-                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
-                        "id": "3TVXtAsR1Inumwj472S9r4",
-                        "name": "Drake",
-                        "type": "artist",
-                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
-                    }
-                ],
-                "disc_number": 1,
-                "duration_ms": 243723,
-                "explicit": true,
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/track/6MlGqWzDiLkZ0vmAEsisEk"
-                },
-                "href": "https://api.spotify.com/v1/tracks/6MlGqWzDiLkZ0vmAEsisEk",
-                "id": "6MlGqWzDiLkZ0vmAEsisEk",
-                "is_local": false,
-                "is_playable": true,
-                "name": "The Calm",
-                "preview_url": null,
-                "track_number": 15,
-                "type": "track",
-                "uri": "spotify:track:6MlGqWzDiLkZ0vmAEsisEk"
-            },
-            {
-                "artists": [
-                    {
-                        "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
-                        },
-                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
-                        "id": "3TVXtAsR1Inumwj472S9r4",
-                        "name": "Drake",
-                        "type": "artist",
-                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
-                    },
-                    {
-                        "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/0qudezVgvl4Chd9BgNFB83"
-                        },
-                        "href": "https://api.spotify.com/v1/artists/0qudezVgvl4Chd9BgNFB83",
-                        "id": "0qudezVgvl4Chd9BgNFB83",
-                        "name": "Chilly Gonzales",
-                        "type": "artist",
-                        "uri": "spotify:artist:0qudezVgvl4Chd9BgNFB83"
-                    }
-                ],
-                "disc_number": 1,
-                "duration_ms": 174398,
-                "explicit": true,
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/track/6hHKFReuQR9VQp39ev43wY"
-                },
-                "href": "https://api.spotify.com/v1/tracks/6hHKFReuQR9VQp39ev43wY",
-                "id": "6hHKFReuQR9VQp39ev43wY",
-                "is_local": false,
-                "is_playable": true,
-                "name": "Outro (feat. Chilly Gonzales)",
-                "preview_url": null,
-                "track_number": 16,
-                "type": "track",
-                "uri": "spotify:track:6hHKFReuQR9VQp39ev43wY"
-            },
-            {
-                "artists": [
-                    {
-                        "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
-                        },
-                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
-                        "id": "3TVXtAsR1Inumwj472S9r4",
-                        "name": "Drake",
-                        "type": "artist",
-                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
-                    }
-                ],
-                "disc_number": 1,
-                "duration_ms": 213492,
-                "explicit": true,
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/track/4XTXamS1g4g93jPxyuFJJ6"
-                },
-                "href": "https://api.spotify.com/v1/tracks/4XTXamS1g4g93jPxyuFJJ6",
-                "id": "4XTXamS1g4g93jPxyuFJJ6",
-                "is_local": false,
-                "is_playable": true,
-                "name": "Brand New",
-                "preview_url": null,
-                "track_number": 17,
-                "type": "track",
-                "uri": "spotify:track:4XTXamS1g4g93jPxyuFJJ6"
-            },
-            {
-                "artists": [
-                    {
-                        "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
-                        },
-                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
-                        "id": "3TVXtAsR1Inumwj472S9r4",
-                        "name": "Drake",
-                        "type": "artist",
-                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
-                    }
-                ],
-                "disc_number": 1,
-                "duration_ms": 332529,
-                "explicit": true,
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/track/3SnXwQUrvSacFziUYXTNKY"
-                },
-                "href": "https://api.spotify.com/v1/tracks/3SnXwQUrvSacFziUYXTNKY",
-                "id": "3SnXwQUrvSacFziUYXTNKY",
-                "is_local": false,
-                "is_playable": true,
-                "name": "Congratulations",
+                "name": "You Only Live Twice (with Lil Wayne & Rick Ross)",
                 "preview_url": null,
                 "track_number": 18,
                 "type": "track",
-                "uri": "spotify:track:3SnXwQUrvSacFziUYXTNKY"
+                "uri": "spotify:track:50ceCGZ3oD3U5caQV5bP6f"
+            },
+            {
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                        "id": "3TVXtAsR1Inumwj472S9r4",
+                        "name": "Drake",
+                        "type": "artist",
+                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                    },
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/0fA0VVWsXO9YnASrzqfmYu",
+                        "id": "0fA0VVWsXO9YnASrzqfmYu",
+                        "name": "Kid Cudi",
+                        "type": "artist",
+                        "uri": "spotify:artist:0fA0VVWsXO9YnASrzqfmYu"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 252378,
+                "explicit": true,
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/7F9cT6hIRhnFCYP6GKS0tf"
+                },
+                "href": "https://api.spotify.com/v1/tracks/7F9cT6hIRhnFCYP6GKS0tf",
+                "id": "7F9cT6hIRhnFCYP6GKS0tf",
+                "is_local": false,
+                "is_playable": true,
+                "name": "IMY2 (with Kid Cudi)",
+                "preview_url": null,
+                "track_number": 19,
+                "type": "track",
+                "uri": "spotify:track:7F9cT6hIRhnFCYP6GKS0tf"
+            },
+            {
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                        "id": "3TVXtAsR1Inumwj472S9r4",
+                        "name": "Drake",
+                        "type": "artist",
+                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 245131,
+                "explicit": true,
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/3RkNXZvOSMMElmmXztDc94"
+                },
+                "href": "https://api.spotify.com/v1/tracks/3RkNXZvOSMMElmmXztDc94",
+                "id": "3RkNXZvOSMMElmmXztDc94",
+                "is_local": false,
+                "is_playable": true,
+                "name": "F*****g Fans",
+                "preview_url": null,
+                "track_number": 20,
+                "type": "track",
+                "uri": "spotify:track:3RkNXZvOSMMElmmXztDc94"
+            },
+            {
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3TVXtAsR1Inumwj472S9r4",
+                        "id": "3TVXtAsR1Inumwj472S9r4",
+                        "name": "Drake",
+                        "type": "artist",
+                        "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 351220,
+                "explicit": true,
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/1cCXT1cErAY6tmIqHbodrt"
+                },
+                "href": "https://api.spotify.com/v1/tracks/1cCXT1cErAY6tmIqHbodrt",
+                "id": "1cCXT1cErAY6tmIqHbodrt",
+                "is_local": false,
+                "is_playable": true,
+                "name": "The Remorse",
+                "preview_url": null,
+                "track_number": 21,
+                "type": "track",
+                "uri": "spotify:track:1cCXT1cErAY6tmIqHbodrt"
             }
         ],
         "limit": 50,
         "next": null,
         "offset": 0,
         "previous": null,
-        "total": 18
+        "total": 21
     },
     "type": "album",
-    "uri": "spotify:album:1LShhEEKRT5MNPcO7jtYHh"
+    "uri": "spotify:album:3SpBlxme9WbeQdI9kx7KAV"
 }
