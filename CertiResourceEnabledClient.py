@@ -113,6 +113,19 @@ class SpotifyAPI(object):
             r.status_code
             return{}
         return r.json()
+
+    def getTrackresource(self, lookupId, resourceType='tracks', version='v1' ):
+        endpoint =f"https://api.spotify.com/{version}/{resourceType}?ids={lookupId}"
+        headers = self.get_resource_header()
+        r = requests.get(endpoint, headers=headers)
+        #print(r.json())
+        with open('data.json', 'w', encoding='utf-8') as f:
+            json.dump(r.json(), f, ensure_ascii=False, indent=4)
+
+        if r.status_code not in range(200, 299):
+            r.status_code
+            return{}
+        return r.json()
     
     
     def get_album(self, _id ):
@@ -122,6 +135,10 @@ class SpotifyAPI(object):
     def get_artist(self, _id ):
         
         return self.get_resource(_id, resource_type="artists", limit='limit=49')
+    
+    def get_trackenergy(self, _id ):
+        
+        return self.getTrackresource(_id, resourceType="audio-features")
 
     
 

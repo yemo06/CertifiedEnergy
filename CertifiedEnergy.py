@@ -41,13 +41,29 @@ for album in range(len(albumInfolist)):
 ### Algorithm to get the uri of tracks
 Tracklistcodes = []
 for x in range(len(explicitList)):
-    # for y in range(explicitList[x][1]):
-        trackListuri = spotify.get_album(explicitList[x][3])['tracks']['items']
-        Tracklistcodes[x] = crec.getUriListDictfromList2('uri',trackListuri)
-    
-print(trackListuri)
 
-        ### Algorithm to get 
+        trackListuri = spotify.get_album(explicitList[x][3])['tracks']['items'] # gets the dict with uri
+        trackListuris =crec.getUriListDictfromList2('uri',trackListuri)
+        trackListnames = crec.getGenAttrDictfromList('name',trackListuri)
+        Tracklistcodes.append(list(zip(trackListnames,trackListuris)))#gets a list of uri's and track names for each ablum
+
+print(Tracklistcodes)
+print(len(Tracklistcodes))
+
+# test1 = spotify.get_trackenergy(Tracklistcodes[0][1])['audio_features'] #Not retun
+# print(type(test1))
+# test2 = crec.getGenAttrDictfromList('energy',test1)
+# print(test2)
+# print(len(test2))
+
+
+# for x in range(len(Tracklistcodes)):
+
+#     trackEnergyList = spotify.get_trackenergy(explicitList[x][1])   
+# print(len(Tracklistcodes))
+# print(Tracklistcodes)
+# print(len(Tracklistcodes))
+
 
 
 
