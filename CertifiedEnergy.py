@@ -47,14 +47,13 @@ for x in range(len(explicitList)):
         trackListnames = crec.getGenAttrDictfromList('name',trackListuri)
         Tracklistcodes.append(list(zip(trackListnames,trackListuris)))#gets a list of uri's and track names for each ablum
 
-print(Tracklistcodes)
-print(len(Tracklistcodes))
+# print(Tracklistcodes)
+# print(len(Tracklistcodes))
 
-# test1 = spotify.get_trackenergy(Tracklistcodes[0][1])['audio_features'] #Not retun
-# print(type(test1))
+test1 = spotify.get_trackenergy(Tracklistcodes[0][1][1])['energy'] # Working on algorithm to get energy of songs from track analysis
+print(type(test1))
 # test2 = crec.getGenAttrDictfromList('energy',test1)
-# print(test2)
-# print(len(test2))
+print(Tracklistcodes[0][1][0] + " Energy "+ str(test1))
 
 
 # for x in range(len(Tracklistcodes)):
