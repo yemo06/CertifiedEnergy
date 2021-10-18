@@ -62,10 +62,10 @@ for x in range(len(Tracklistcodes)):
 print((trackEnergyList))
 print(len(trackEnergyList))
 
-## Well begin by finsing a way to better the time complexity of the algorithm
+## Well begin by finishing a way to better the time complexity of the algorithm
 # Next is setting up algorithm to disect and arrange data by album, 
-# rank the top 5 songs and 
-# rank albums total energy by average, 
+# Rank the top 5 songs ineach album 
+# Rank albums total energy by average, 
 #Putting all these algorithms into functions
 
 
