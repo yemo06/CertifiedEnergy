@@ -50,18 +50,24 @@ for x in range(len(explicitList)):
 # print(Tracklistcodes)
 # print(len(Tracklistcodes))
 
-test1 = spotify.get_trackenergy(Tracklistcodes[0][1][1])['energy'] # Working on algorithm to get energy of songs from track analysis
-print(type(test1))
-# test2 = crec.getGenAttrDictfromList('energy',test1)
-print(Tracklistcodes[0][1][0] + " Energy "+ str(test1))
 
+# test1 = spotify.get_trackenergy(Tracklistcodes[0][1][1])['energy'] # Working on algorithm to get energy of songs from track analysis
+# print(type(test1))
+# print(Tracklistcodes[0][1][0] + " Energy "+ str(test1))
 
-# for x in range(len(Tracklistcodes)):
+trackEnergyList =[]
+for x in range(len(Tracklistcodes)):
+    for y in range(len(Tracklistcodes[x])):
+        trackEnergyList.append([Tracklistcodes[x][y][0],spotify.get_trackenergy(Tracklistcodes[x][y][1])['energy']]) # Working on algorithm to get energy of songs from track analysis
+print((trackEnergyList))
+print(len(trackEnergyList))
 
-#     trackEnergyList = spotify.get_trackenergy(explicitList[x][1])   
-# print(len(Tracklistcodes))
-# print(Tracklistcodes)
-# print(len(Tracklistcodes))
+## Well begin by finsing a way to better the time complexity of the algorithm
+# Next is setting up algorithm to disect and arrange data by album, 
+# rank the top 5 songs and 
+# rank albums total energy by average, 
+#Putting all these algorithms into functions
+
 
 
 

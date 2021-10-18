@@ -116,7 +116,6 @@ class SpotifyAPI(object):
 
     def getTrackresource(self, lookupId, resourceType='tracks', version='v1' ):
         endpoint =f"https://api.spotify.com/{version}/{resourceType}/{lookupId}"
-        print("Wilder :3 "+endpoint)
         headers = self.get_resource_header()
         r = requests.get(endpoint, headers=headers)
         #print(r.json())
