@@ -1,43 +1,96 @@
 import CertiResourceEnabledClient as crec
-from collections import Counter
-
-def Extract(lst,ndx):
-    return [item[ndx] for item in lst]
-
-
-#getting artist (Drake) uri code 
 spotify = crec.SpotifyAPI(crec.client_id,crec.client_secret)
-searchResults = spotify.search("Drake",1,search_type="artist")
-artistUri = searchResults['artists']['items']#Before the 'getDictfromList' function call the 'uri' String looks like "spotify:artist:3TVXtAsR1Inumwj472S9r4" 
-artistUricode= crec.getUriDictfromList("uri",artistUri)#After the 'getDictfromList' function call the 'uri' String looks like "3TVXtAsR1Inumwj472S9r4"
+
+# def Extract(lst,ndx):
+#     return [item[ndx] for item in lst]
+
+
+def getGenAttrDictfromList(key, List):
+    returnList =[]
+    for diction in List:
+        if key in diction:
+            returnList.append(diction[key])
+    return returnList
+
+def getUriDictfromList(key, List):
+    for diction in List:
+        if key in diction:
+            return diction[key].split(":",2)[2] #to get to the code split on the ":" and grab the 3rd element in the new split string
+
+def getUriListDictfromList2(key, List):
+    returnList =[]
+    for diction in List:
+        if key in diction:
+            returnList.append(diction[key].split(":",2)[2])
+    return returnList
+
+
+def getArtist (artist):
+    artistSearchResults =spotify.search(artist,1,search_type="artist")
+    artistUri =artistSearchResults['artists']['items']
+    artistUricode = getUriDictfromList("uri", artistUri)
+    return artistUricode
+
+def getArtistAlbums(artistUriCode):
+    artist = spotify.get_artist(artistUriCode)
+    albumUri = artist['items']
+    albumUriList =getUriListDictfromList2("uri", albumUri)
+    return albumUriList
+
+def getAlbumInfo(artistAlbumUriList):
+    albumInfo =[]
+    for album in range(len(artistAlbumUriList)):
+        singleAlbum = spotify.get_album(artistAlbumUriList[album])
+        albumName= singleAlbum['name']
+        albumTracklen= singleAlbum['total_tracks']
+        newList=singleAlbum['tracks']['items']
+        explicitCount =getGenAttrDictfromList('explicit',newList).count(True)
+        albumInfo.append([albumName,albumTracklen,explicitCount,artistAlbumUriList[album]])
+    return albumInfo
+
+### Here is where the algorithm for filtering Non-Explicit albums should go ###
+def getExplicitAlbums(albumInfoList):
+    explicitList = []
+    for album in range(len(albumInfoList)):
+        if albumInfoList[album][2] > 0:
+            explicitList.append(albumInfoList[album])
+    return explicitList
+#getting artist (Drake) uri code 
+
+# searchResults = spotify.search("Drake",1,search_type="artist")
+# artistUri = searchResults['artists']['items']#Before the 'getDictfromList' function call the 'uri' String looks like "spotify:artist:3TVXtAsR1Inumwj472S9r4" 
+# artistUricode= crec.getUriDictfromList("uri",artistUri)#After the 'getDictfromList' function call the 'uri' String looks like "3TVXtAsR1Inumwj472S9r4"
+
+
+
 
 #getting a list of drakes albums
-artist= spotify.get_artist(artistUricode)
-albumUri = artist['items']
-albumUriList =crec.getUriListDictfromList2("uri", albumUri)#.split(":",2)[2] #Returns a list
+
+# artist= spotify.get_artist()
+# albumUri = artist['items']
+# albumUriList =crec.getUriListDictfromList2("uri", albumUri)#.split(":",2)[2] #Returns a list
+
+artistUriCode = getArtist("Drake")
+
+artistAlbumUriList = getArtistAlbums(artistUriCode)
+    
+albumInfoList =getAlbumInfo(artistAlbumUriList)
+
+explicitList =getExplicitAlbums(albumInfoList)
 
 # print(albumUriList) #So it looks were dealing with duplicates at the track level so why not compare duplicte albums b explicit if not pop, else, keep the first
 # print(len(albumUriList))
 
 #GetExplcit Albums only
-albumInfolist = []
-for album in range(len(albumUriList)):
-    singleAlbum = spotify.get_album(albumUriList[album])
-    albumName= singleAlbum['name']
-    albumTracklen= singleAlbum['total_tracks']
-    newList=singleAlbum['tracks']['items']
-    explicitCount =crec.getGenAttrDictfromList('explicit',newList).count(True)
-    albumInfolist.append([albumName,albumTracklen,explicitCount,albumUriList[album]])
 
 
-### Here is where the algotithem for filtering Non-Explicit albums should go ###
-explicitList = []
-for album in range(len(albumInfolist)):
-    if albumInfolist[album][2] > 0:
-        explicitList.append(albumInfolist[album])
-        # album+=1
-    # print((explicitList))
+    
 
+
+
+
+
+### Work on refactring this next ###
 ### Algorithm to get the uri of tracks
 Tracklistcodes = []
 for x in range(len(explicitList)):
