@@ -25,7 +25,7 @@ def getUriListDictfromList2(key, List):
     return returnList
 
 
-def getArtist (artist):
+def getArtist(artist):
     artistSearchResults =spotify.search(artist,1,search_type="artist")
     artistUri =artistSearchResults['artists']['items']
     artistUricode = getUriDictfromList("uri", artistUri)
@@ -57,6 +57,26 @@ def getExplicitAlbums(albumInfoList):
     return explicitList
 #getting artist (Drake) uri code 
 
+def getTrackCodeName (albumList):
+    ### Algorithm to get the uri of tracks
+    trackNamexCodes = []
+    
+    for x in range(len(albumList)):
+        trackListuri = spotify.get_album(albumList[x][3])['tracks']['items'] # gets the dict with uri
+        trackListuris =crec.getUriListDictfromList2('uri',trackListuri)
+        trackListnames = crec.getGenAttrDictfromList('name',trackListuri)
+        trackNamexCodes.append(list(zip(trackListnames,trackListuris)))#gets a list of uri's and track names for each ablum    
+    return trackNamexCodes
+
+def getTrackEnergy(tracksList):
+    trackEnergyList =[]
+    for x in range(len(tracksList)):
+        for y in range(len(tracksList[x])):
+        # Working on algorithm to get energy of songs from track analysis
+            trackEnergyList.append([tracksList[x][y][0],spotify.get_trackenergy(tracksList[x][y][1])['energy']]) 
+    return trackEnergyList
+
+
 # searchResults = spotify.search("Drake",1,search_type="artist")
 # artistUri = searchResults['artists']['items']#Before the 'getDictfromList' function call the 'uri' String looks like "spotify:artist:3TVXtAsR1Inumwj472S9r4" 
 # artistUricode= crec.getUriDictfromList("uri",artistUri)#After the 'getDictfromList' function call the 'uri' String looks like "3TVXtAsR1Inumwj472S9r4"
@@ -78,6 +98,13 @@ albumInfoList =getAlbumInfo(artistAlbumUriList)
 
 explicitList =getExplicitAlbums(albumInfoList)
 
+trackNamesxCodes =getTrackCodeName(explicitList)
+
+trackEnergyList = getTrackEnergy(trackNamesxCodes)
+
+print((trackEnergyList))
+print(len(trackEnergyList))
+
 # print(albumUriList) #So it looks were dealing with duplicates at the track level so why not compare duplicte albums b explicit if not pop, else, keep the first
 # print(len(albumUriList))
 
@@ -91,29 +118,16 @@ explicitList =getExplicitAlbums(albumInfoList)
 
 
 ### Work on refactring this next ###
-### Algorithm to get the uri of tracks
-Tracklistcodes = []
-for x in range(len(explicitList)):
 
-        trackListuri = spotify.get_album(explicitList[x][3])['tracks']['items'] # gets the dict with uri
-        trackListuris =crec.getUriListDictfromList2('uri',trackListuri)
-        trackListnames = crec.getGenAttrDictfromList('name',trackListuri)
-        Tracklistcodes.append(list(zip(trackListnames,trackListuris)))#gets a list of uri's and track names for each ablum
-
-# print(Tracklistcodes)
-# print(len(Tracklistcodes))
+# print(tracksList)
+# print(len(tracksList))
 
 
-# test1 = spotify.get_trackenergy(Tracklistcodes[0][1][1])['energy'] # Working on algorithm to get energy of songs from track analysis
+# test1 = spotify.get_trackenergy(tracksList[0][1][1])['energy'] # Working on algorithm to get energy of songs from track analysis
 # print(type(test1))
-# print(Tracklistcodes[0][1][0] + " Energy "+ str(test1))
+# print(tracksList[0][1][0] + " Energy "+ str(test1))
 
-trackEnergyList =[]
-for x in range(len(Tracklistcodes)):
-    for y in range(len(Tracklistcodes[x])):
-        trackEnergyList.append([Tracklistcodes[x][y][0],spotify.get_trackenergy(Tracklistcodes[x][y][1])['energy']]) # Working on algorithm to get energy of songs from track analysis
-print((trackEnergyList))
-print(len(trackEnergyList))
+
 
 ## Well begin by finishing a way to better the time complexity of the algorithm
 # Next is setting up algorithm to disect and arrange data by album, 
