@@ -90,7 +90,7 @@ def getTrackEnergy(tracksList):
 # albumUri = artist['items']
 # albumUriList =crec.getUriListDictfromList2("uri", albumUri)#.split(":",2)[2] #Returns a list
 
-artistUriCode = getArtist("Drake")
+artistUriCode = getArtist("Gunna")
 
 artistAlbumUriList = getArtistAlbums(artistUriCode)
     
@@ -104,6 +104,15 @@ trackEnergyList = getTrackEnergy(trackNamesxCodes)
 
 print((trackEnergyList))
 print(len(trackEnergyList))
+
+
+# TODO
+# Next is setting up algorithm to disect and arrange data by album,
+## Finishing a way to better the time complexity of the algorithm
+# Writing some tests / figuring out how to test
+# Rank the top 5 songs ineach album 
+# Rank albums total energy by average, 
+
 
 # print(albumUriList) #So it looks were dealing with duplicates at the track level so why not compare duplicte albums b explicit if not pop, else, keep the first
 # print(len(albumUriList))
@@ -128,12 +137,6 @@ print(len(trackEnergyList))
 # print(tracksList[0][1][0] + " Energy "+ str(test1))
 
 
-
-## Well begin by finishing a way to better the time complexity of the algorithm
-# Next is setting up algorithm to disect and arrange data by album, 
-# Rank the top 5 songs ineach album 
-# Rank albums total energy by average, 
-#Putting all these algorithms into functions
 
 
 
@@ -176,8 +179,6 @@ print(len(trackEnergyList))
 
     
             
-
-
 
 # print(explcitAlbumlist)# Puts all the general info needed to make a formula to get rid of Non-Explicit alnums Next is the generalzation and the f
 # print(len(explcitAlbumlist))
