@@ -90,7 +90,7 @@ def getTrackEnergy(tracksList):
 # albumUri = artist['items']
 # albumUriList =crec.getUriListDictfromList2("uri", albumUri)#.split(":",2)[2] #Returns a list
 
-artistUriCode = getArtist("Gunna")
+artistUriCode = getArtist("Drake")
 
 artistAlbumUriList = getArtistAlbums(artistUriCode)
     
