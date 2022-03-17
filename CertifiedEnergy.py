@@ -59,11 +59,13 @@ def getExplicitAlbums(albumInfoList):
 
 def getTrackCodeName (albumList):
     ### Algorithm to get the uri of tracks
+    ### Creates a new List called trackNamexCodes which will be filled with track names & id codes
+    ### The for loops goal is to is to create list that contains a tuples of track names, and uri code.
     trackNamexCodes = []
     
     for x in range(len(albumList)):
         trackListuri = spotify.get_album(albumList[x][3])['tracks']['items'] # gets the dict with uri
-        trackListuris =crec.getUriListDictfromList2('uri',trackListuri)
+        trackListuris =crec.getUriListDictfromList2('uri',trackListuri) #gets the 
         trackListnames = crec.getGenAttrDictfromList('name',trackListuri)
         trackNamexCodes.append(list(zip(trackListnames,trackListuris)))#gets a list of uri's and track names for each ablum    
     return trackNamexCodes
