@@ -33,7 +33,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Certified Energy</h3>
 
   <p align="center">
     An awesome README template to jumpstart your projects!
@@ -84,16 +84,13 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+**Certified Energy** was created out of curiosity. Which of Drakes is the most Energetic? With the release of his latest album: **Certified Lover Boy** I had questions about how the energy of this album compared to the others in Drake's discography. Utilizing the Spotify API and Python; **Certified Energy** aims to understand how the changes in energy in music and how, if there are any, correlating factors that contribute to a songs energy.    
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+Current Goals:
+* Find the most Energetic Album in Drake's discogrpahy
+* Find the Top 5 most energetic songs in Drakes discography
+* Find the Average Energy of Drake's Albums
+* Rank individual songs within each album.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -124,6 +121,7 @@ This is an example of how to list things you need to use the software and how to
 * datetime
 * urllib.parse
 * requests.api
+* config
 
 
   ```sh
