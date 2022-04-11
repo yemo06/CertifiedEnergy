@@ -36,7 +36,7 @@
   <h3 align="center">Certified Energy</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    This is the part where Im'a find new branch for me to explore
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
@@ -191,7 +191,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/yemo06/CertifiedEnergy](https://github.com/yemo06/CertifiedEnergy)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
