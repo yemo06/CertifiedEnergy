@@ -98,7 +98,6 @@ Current Goals:
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [Python](https://www.python.org/)
 
@@ -124,10 +123,6 @@ This is an example of how to list things you need to use the software and how to
 * config
 
 
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
@@ -135,12 +130,9 @@ _Below is an example of how you can instruct your audience on installing and set
 1. Get a Spotify  API Key at [https://developer.spotify.com/documentation/web-api/quick-start/](https://developer.spotify.com/documentation/web-api/quick-start/)
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/yemo06/CertifiedEnergy.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
+
 4. Create a file called `config.py`
    ```py
    Enter the following two lines w/ your unique credentials
@@ -156,6 +148,9 @@ _Below is an example of how you can instruct your audience on installing and set
 ## Usage
 
 Coming Soon ....
+
+* Seeking if there are any correlations with the loudness of a song and its energy.
+* Seeing if the is significant difference in a songs energy when comparing the explicit and non-explcit versions the song.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
