@@ -84,13 +84,14 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-**Certified Energy** was created out of curiosity. Which of Drakes is the most Energetic? With the release of his latest album: **Certified Lover Boy** I had questions about how the energy of this album compared to the others in Drake's discography. Utilizing the Spotify API and Python; **Certified Energy** aims to understand how the changes in energy in music and how, if there are any, correlating factors that contribute to a songs energy.    
+**Certified Energy** was created out of curiosity. Which of Drake's albums is the most is the most energetic? With the release of his latest album: **Certified Lover Boy** I had questions about how the energy of this album compared to the others in Drake's discography. Utilizing the Spotify API and Python; **Certified Energy** aims to understand how the changes in energy in music and how, if there are any, correlating factors that contribute to a songs energy.    
 
 Current Goals:
 * Find the most Energetic Album in Drake's discogrpahy
 * Find the Top 5 most energetic songs in Drakes discography
 * Find the Average Energy of Drake's Albums
 * Rank individual songs within each album.
+* Rank the Drake's Albums by Energy
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -108,12 +109,9 @@ Current Goals:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Libraires Needed
 
-This is an example of how to list things you need to use the software and how to install them.
 * json
 * requests
 * base64
@@ -125,7 +123,6 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
 1. Get a Spotify  API Key at [https://developer.spotify.com/documentation/web-api/quick-start/](https://developer.spotify.com/documentation/web-api/quick-start/)
 2. Clone the repo
@@ -145,9 +142,9 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Coming Soon / Next Steps ....
 
-Coming Soon ....
+
 
 * Seeking if there are any correlations with the loudness of a song and its energy.
 * Seeing if the is significant difference in a songs energy when comparing the explicit and non-explcit versions the song.
