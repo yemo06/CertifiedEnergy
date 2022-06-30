@@ -1,3 +1,4 @@
+from ctypes.wintypes import PINT
 import CertiResourceEnabledClient as crec
 spotify = crec.SpotifyAPI(crec.client_id,crec.client_secret)
 
@@ -51,24 +52,38 @@ def getAlbumInfo(artistAlbumUriList):
 ### Here is where the algorithm for filtering Non-Explicit albums should go ###
 def getExplicitAlbums(albumInfoList):
     explicitList = []
-    for album in range(len(albumInfoList)):
-        if album[0] in explicitList:
-            fromEList = explicitList[explicitList.index(album[0])] # "fromElist refrences the an album & albumdata in the explicitList based the album were serching for
-            
-            if album[1] >= fromEList[1] & album[2] >= fromEList[2]: #if the track list & the amount of explcit songs in one album is greater than or equal to another
-                explicitList.pop(explicitList.index(album[0]))
-                explicitList.append(album)
-        
+    l = 1
+    for r in range(1,len(albumInfoList)):
+        if albumInfoList[r][0] != albumInfoList[r-1][0] :
+            albumInfoList[l] =albumInfoList[r]
+            l+=1
         else:
-            explicitList.append(album)
+            if((albumInfoList[r][1] >= albumInfoList[r-1][1]) & (albumInfoList[r][2] >= albumInfoList[r-1][2] )):
+                albumInfoList[l] =albumInfoList[r]
+                l+=1
+            else:
+                continue #Sorts most of the non-explicit/duplicate albums, have to figure out this last else case to make sure mutiple cases that have the same alnum dont stick around, maybe turn the else into an else if
+
+        
+            
+    # for album in range(len(albumInfoList)):
+    #     if album[0] in explicitList:
+    #         fromEList = explicitList[explicitList.index(album[0])] # "fromElist refrences the an album & albumdata in the explicitList based the album were serching for
+            
+    #         if (album[1] >= fromEList[1]) & (album[2] >= fromEList[2]): #if the track list & the amount of explcit songs in one album is greater than or equal to another
+    #             explicitList.pop(explicitList.index(album[0]))
+    #             explicitList.append(album)
+        
+    #     else:
+    #         explicitList.append(album)
             
             
                 
                  
              
-        if albumInfoList[album][2] > 0:
-            explicitList.append(albumInfoList[album])
-    return explicitList
+        # if albumInfoList[album][2] > 0:
+        #     explicitList.append(albumInfoList[album])
+    return albumInfoList[:l]
 #getting artist (Drake) uri code 
 
 def getTrackCodeName (albumList):
@@ -113,8 +128,11 @@ artistUriCode = getArtist("Drake")
 artistAlbumUriList = getArtistAlbums(artistUriCode)
     
 albumInfoList =getAlbumInfo(artistAlbumUriList)
+print(albumInfoList[0])
 
-# explicitList =getExplicitAlbums(albumInfoList)
+explicitList =getExplicitAlbums(albumInfoList)
+print(explicitList)
+print(len(explicitList))
 
 # trackNamesxCodes =getTrackCodeName(explicitList)
 
@@ -122,7 +140,7 @@ albumInfoList =getAlbumInfo(artistAlbumUriList)
 
 # print((trackEnergyList))
 # print(len(trackEnergyList))
-print(albumInfoList)
+# print(albumInfoList)
 
 
 # TODO
