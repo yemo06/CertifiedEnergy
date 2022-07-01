@@ -61,8 +61,8 @@ def getExplicitAlbums(albumInfoList):
             if((albumInfoList[r][1] >= albumInfoList[r-1][1]) & (albumInfoList[r][2] >= albumInfoList[r-1][2] )):
                 albumInfoList[l] =albumInfoList[r]
                 l+=1
-            else:
-                continue #Sorts most of the non-explicit/duplicate albums, have to figure out this last else case to make sure mutiple cases that have the same alnum dont stick around, maybe turn the else into an else if
+            # else:
+            #     continue #Sorts most of the non-explicit/dupl icate albums, have to figure out this last else case to make sure mutiple cases that have the same alnum dont stick around, maybe turn the else into an else if
 
         
             
@@ -128,7 +128,7 @@ artistUriCode = getArtist("Drake")
 artistAlbumUriList = getArtistAlbums(artistUriCode)
     
 albumInfoList =getAlbumInfo(artistAlbumUriList)
-print(albumInfoList[0])
+# print(albumInfoList[0])
 
 explicitList =getExplicitAlbums(albumInfoList)
 print(explicitList)
