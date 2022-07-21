@@ -51,47 +51,41 @@ def getAlbumInfo(artistAlbumUriList):
 
 ### Here is where the algorithm for filtering Non-Explicit albums should go ###
 def getExplicitAlbums(albumInfoList):
-    explicitList = []
-    l = 1
-    for r in range(1,len(albumInfoList)):
-        if albumInfoList[r][0] != albumInfoList[r-1][0] :
-            albumInfoList[l] =albumInfoList[r]
-            l+=1
+    # explicitList = []
+    dictLst = dict()
+    for i in range (0,len(albumInfoList),1):
+        curalbumName = albumInfoList[i][0]
+        curalbumLen = albumInfoList[i][1]
+        curExpAmount = albumInfoList[i][2]
+        
+        if curalbumName in dictLst:
+            print(dictLst.get(curalbumName)[1])
+            if (curalbumLen >= dictLst.get(curalbumName)[0]) and (curExpAmount >= dictLst.get(curalbumName)[1]): # TODO: Line is mesing stuff up
+                dictLst.pop(albumInfoList[i][0])
+                dictLst[albumInfoList[i][0]] = albumInfoList[i][1:]
+            else:
+                continue
         else:
-            if((albumInfoList[r][1] >= albumInfoList[r-1][1]) & (albumInfoList[r][2] >= albumInfoList[r-1][2] )):
-                albumInfoList[l] =albumInfoList[r]
-                l+=1
-            # else:
-            #     continue #Sorts most of the non-explicit/dupl icate albums, have to figure out this last else case to make sure mutiple cases that have the same alnum dont stick around, maybe turn the else into an else if
-
-        
+            dictLst[albumInfoList[i][0]] = albumInfoList[i][1:]
             
-    # for album in range(len(albumInfoList)):
-    #     if album[0] in explicitList:
-    #         fromEList = explicitList[explicitList.index(album[0])] # "fromElist refrences the an album & albumdata in the explicitList based the album were serching for
-            
-    #         if (album[1] >= fromEList[1]) & (album[2] >= fromEList[2]): #if the track list & the amount of explcit songs in one album is greater than or equal to another
-    #             explicitList.pop(explicitList.index(album[0]))
-    #             explicitList.append(album)
-        
-    #     else:
-    #         explicitList.append(album)
-            
-            
-                
-                 
-             
-        # if albumInfoList[album][2] > 0:
-        #     explicitList.append(albumInfoList[album])
-    return albumInfoList[:l]
-#getting artist (Drake) uri code 
+    return dictLst # gota merge th is back in
 
 def getTrackCodeName (albumList):
-    ### Algorithm to get the uri of tracks
-    ### Creates a new List called trackNamexCodes which will be filled with track names & id codes
-    ### The for loops goal is to is to create list that contains a sublists of track names, and track identifer codes codes.
-    ### This happens by getting the name and then the corresponding uri code and zipping them together, then appending the lists together.
-    
+    """
+    Algorithm to get the uri of tracks
+    Creates a new List called trackNamexCodes which will be filled with track names & id codes
+    The for loops goal is to is to create list that contains a sublists of track names, and track identifer codes codes.
+    This happens by getting the name and then the corresponding uri code and zipping them together, then appending the lists together.
+    Args:
+        albumList (list): List of Albums with AlbumName,Number of tracks,Number of explicit tracks, and Albume URI(unique identifier)
+
+    Returns:
+        trackNamexCodes (list): List of tuples with track name and track uri
+    """
+    #Algorithm to get the uri of tracks
+    #Creates a new List called trackNamexCodes which will be filled with track names & id codes
+    #The for loops goal is to is to create list that contains a sublists of track names, and track identifer codes codes.
+    #This happens by getting the name and then the corresponding uri code and zipping them together, then appending the lists together.
     trackNamexCodes = []
     
     for x in range(len(albumList)):
@@ -101,13 +95,13 @@ def getTrackCodeName (albumList):
         trackNamexCodes.append(list(zip(trackListnames,trackListuris)))#gets a list of uri's and track names for each ablum    
     return trackNamexCodes
 
-def getTrackEnergy(tracksList):
-    trackEnergyList =[]
-    for x in range(len(tracksList)):
-        for y in range(len(tracksList[x])):
-        # Working on algorithm to get energy of songs from track analysis
-            trackEnergyList.append([tracksList[x][y][0],spotify.get_trackenergy(tracksList[x][y][1])['energy']]) 
-    return trackEnergyList
+# def getTrackEnergy(tracksList):
+#     trackEnergyList =[]
+#     for x in range(len(tracksList)):
+#         for y in range(len(tracksList[x])):
+#         # Working on algorithm to get energy of songs from track analysis
+#             trackEnergyList.append([tracksList[x][y][0],spotify.get_trackenergy(tracksList[x][y][1])['energy']]) 
+#     return trackEnergyList
 
 
 # searchResults = spotify.search("Drake",1,search_type="artist")
@@ -128,11 +122,11 @@ artistUriCode = getArtist("Drake")
 artistAlbumUriList = getArtistAlbums(artistUriCode)
     
 albumInfoList =getAlbumInfo(artistAlbumUriList)
-# print(albumInfoList[0])
+print(albumInfoList)
 
-explicitList =getExplicitAlbums(albumInfoList)
-print(explicitList)
-print(len(explicitList))
+# explicitList =getExplicitAlbums(albumInfoList)
+# print(explicitList)
+# print(len(explicitList))
 
 # trackNamesxCodes =getTrackCodeName(explicitList)
 
