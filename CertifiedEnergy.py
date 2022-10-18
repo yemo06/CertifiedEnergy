@@ -60,7 +60,7 @@ def getExplicitAlbums(albumInfoList):
         
         if curalbumName in dictLst:
             print(dictLst.get(curalbumName)[1])
-            if (curalbumLen >= dictLst.get(curalbumName)[0]) and (curExpAmount >= dictLst.get(curalbumName)[1]): # TODO: Line is mesing stuff up
+            if (curalbumLen >= dictLst.get(curalbumName)[0]) and (curExpAmount >= dictLst.get(curalbumName)[1]):
                 dictLst.pop(albumInfoList[i][0])
                 dictLst[albumInfoList[i][0]] = albumInfoList[i][1:]
             else:
@@ -68,7 +68,15 @@ def getExplicitAlbums(albumInfoList):
         else:
             dictLst[albumInfoList[i][0]] = albumInfoList[i][1:]
             
-    return dictLst # gota merge th is back in
+    d = {"name":"python", "version":3.9}
+ 
+    resultLst = [] 
+    for key, val in dictLst.items(): 
+        resultLst.append([key, val]) 
+ 
+    # print(resultLst)
+            
+    return resultLst #dictLst # gotta merge th is back in  #Current format [['Honestly, Nevermind', [14, 5, '3cf4iSSKd8ffTncbtKljXw']] want to have it as one index
 
 def getTrackCodeName (albumList):
     """
@@ -122,7 +130,10 @@ artistUriCode = getArtist("Drake")
 artistAlbumUriList = getArtistAlbums(artistUriCode)
     
 albumInfoList =getAlbumInfo(artistAlbumUriList)
-print(albumInfoList)
+# print(albumInfoList)
+explicitAlbs=getExplicitAlbums(albumInfoList)
+print(explicitAlbs)
+print(len(explicitAlbs))
 
 # explicitList =getExplicitAlbums(albumInfoList)
 # print(explicitList)
